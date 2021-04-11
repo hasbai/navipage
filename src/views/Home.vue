@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import anime from 'animejs'
+// import anime from 'animejs'
 export default {
   name: 'Home',
   data(){
@@ -46,7 +46,6 @@ export default {
     getQuote(){
       this.$axios.get('https://v1.hitokoto.cn/?c=i')
       .then(res => {
-        console.log('get')
           this.quote = res.data.hitokoto + '————《' + res.data.from + '》'
         })
       .catch(() => {
