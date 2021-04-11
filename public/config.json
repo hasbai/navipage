@@ -1,0 +1,56 @@
+{
+    "types": [
+        {
+            "name": "公开",
+            "sites": [
+                {
+                    "name": "网盘",
+                    "link": "https://cloud.salve.cf",
+                    "img": "img/cloud.svg",
+                    "description": "Nextcloud 私有云"
+                },
+                {
+                    "name": "影音",
+                    "link": "https://media.salve.cf",
+                    "img": "img/media.png",
+                    "description": "JellyFin 媒体服务器" 
+                },
+                {
+                    "name": "维基",
+                    "link": "https://wiki.salve.cf",
+                    "img": "img/wiki.svg",
+                    "description": "Kiwix 维基百科数据库" 
+                }
+            ]
+        },
+        {
+            "name": "管理",
+            "sites": [
+                {
+                    "name": "Proxmox",
+                    "link": "https://pve.salve.cf",
+                    "img": "img/pve.svg",
+                    "description": "Proxmox VE 管理面板"
+                },
+                {
+                    "name": "OMV",
+                    "link": "https://omv.salve.cf",
+                    "img": "img/omv.svg",
+                    "description": "Open Media Vault 管理面板"
+                },
+                {
+                    "name": "Docker",
+                    "link": "https://docker.salve.cf",
+                    "img": "img/docker.svg",
+                    "description": "Docker 管理面板"
+                },
+                {
+                    "name": "Torrent",
+                    "link": "https://pt.salve.cf",
+                    "img": "img/pt.svg",
+                    "description": "Qbittorrent 管理面板"
+                }
+            ]
+        }
+    ]
+}
