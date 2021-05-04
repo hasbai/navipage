@@ -1,7 +1,7 @@
 {
-    "types": [
+    "groups": [
         {
-            "name": "公开",
+            "name": "应用",
             "sites": [
                 {
                     "name": "网盘",

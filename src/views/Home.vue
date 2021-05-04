@@ -8,22 +8,34 @@
   <!-- <div style="margin-top:-180px;">{{quote}}</div> -->
   <v-card class="py-16 mb-16" :class="smAndUp ? 'px-8 mx-12' : 'px-4 mx-4'" elevation="8" style="margin-top:-80px;">
     <v-container fluid>
-      <v-row justify="center" v-for="(type, index) in config.types" :key="index">
-        <v-col cols="12" sm="10" md="6" lg="4"
-          v-for="(site, index) in type.sites" :key="index">
-          <v-hover v-slot="{ hover }">
-            <v-card @click="open(site.link)" :elevation="hover ? 16 : 2">
-              <div class="d-flex justify-start align-center py-4">
-                <v-img :src="site.img" height="75" max-width="100" contain :class="smAndUp ? 'mx-8' : 'mx-4'"></v-img>
-                <div>
-                  <v-card-title class="headline" v-text="site.name"></v-card-title>
-                  <v-card-subtitle v-text="site.description"></v-card-subtitle>
+
+      <div v-for="(group, index) in config.groups" :key="index">
+
+        <v-row>
+          <v-col>
+            <div v-text="group.name" class="text-h5 mt-4 mb-2"></div>
+            <v-divider></v-divider>
+          </v-col>
+        </v-row>
+
+        <v-row justify="center">
+          <v-col cols="12" sm="10" md="6" lg="4"
+            v-for="(site, index) in group.sites" :key="index">
+            <v-hover v-slot="{ hover }">
+              <v-card @click="open(site.link)" :elevation="hover ? 16 : 2">
+                <div class="d-flex justify-start align-center py-4">
+                  <v-img :src="site.img" height="75" max-width="100" contain :class="smAndUp ? 'mx-8' : 'mx-4'"></v-img>
+                  <div>
+                    <v-card-title class="headline" v-text="site.name"></v-card-title>
+                    <v-card-subtitle v-text="site.description"></v-card-subtitle>
+                  </div>
                 </div>
-              </div>
-            </v-card>
-          </v-hover>
-        </v-col>
-      </v-row>
+              </v-card>
+            </v-hover>
+          </v-col>
+        </v-row>
+      </div>
+
     </v-container>
   </v-card>  
 </div>
