@@ -11,7 +11,7 @@
 
       <div v-for="(group, index) in config.groups" :key="index">
 
-        <v-row>
+        <v-row v-if="group.name">
           <v-col>
             <div v-text="group.name" class="text-h5 mt-4 mb-2"></div>
             <v-divider></v-divider>
@@ -24,7 +24,8 @@
             <v-hover v-slot="{ hover }">
               <v-card @click="open(site.link)" :elevation="hover ? 16 : 2">
                 <div class="d-flex justify-start align-center py-4">
-                  <v-img :src="site.img" height="75" max-width="100" contain :class="smAndUp ? 'mx-8' : 'mx-4'"></v-img>
+                  <v-img :src="site.img ? site.img : 'img/default.svg'" 
+                  height="75" max-width="100" contain :class="smAndUp ? 'mx-8' : 'mx-4'"></v-img>
                   <div>
                     <v-card-title class="headline" v-text="site.name"></v-card-title>
                     <v-card-subtitle v-text="site.description"></v-card-subtitle>
@@ -74,6 +75,7 @@ export default {
     this.$axios.get('config.json').then(
       res => {
         this.config = res.data
+        document.title = this.config.title ? this.config.title : '个人网站导航页'
       }
     )
     // window.addEventListener('onload', this.getQuote)
@@ -83,8 +85,5 @@ export default {
 }
 </script>
 <style scoped>
-  .fireworks {
-    /* position: absolute; */
-    /* z-index:-2; */
-  }
+
 </style>
