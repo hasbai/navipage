@@ -16,10 +16,22 @@
                     "description": "JellyFin 媒体服务器" 
                 },
                 {
+                    "name": "图片",
+                    "link": "https://pic.salve.cf",
+                    "img": "img/pic.svg",
+                    "description": "PhotoPrism 私人相册" 
+                },
+                {
                     "name": "维基",
                     "link": "https://wiki.salve.cf",
                     "img": "img/wiki.svg",
                     "description": "Kiwix 维基百科数据库" 
+                },
+                {
+                    "name": "Torrent",
+                    "link": "https://pt.salve.cf",
+                    "img": "img/pt.svg",
+                    "description": "Qbittorrent 管理面板"
                 }
             ]
         },
@@ -43,12 +55,6 @@
                     "link": "https://docker.salve.cf",
                     "img": "img/docker.svg",
                     "description": "Docker 管理面板"
-                },
-                {
-                    "name": "Torrent",
-                    "link": "https://pt.salve.cf",
-                    "img": "img/pt.svg",
-                    "description": "Qbittorrent 管理面板"
                 }
             ]
         }
