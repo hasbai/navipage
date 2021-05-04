@@ -33,6 +33,12 @@
                     "link": "https://pt.salve.cf",
                     "img": "img/pt.svg",
                     "description": "Qbittorrent 管理面板"
+                },
+                {
+                    "name": "挖矿受益",
+                    "link": "https://pool.binance.com/zh-CN/statistics?urlParams=l5VKmBKEOfkmrk68qE9MF2FmScC3Vs6xiK3ah6ePt0008197",
+                    "img": "img/eth.svg",
+                    "description": "币安挖矿受益观察页面"
                 }
             ]
         },
