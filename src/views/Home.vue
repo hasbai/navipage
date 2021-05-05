@@ -72,15 +72,16 @@ export default {
     }
   },
   created(){
+    this.getQuote()
+  },
+  beforeCreate(){
     this.$axios.get('config.json').then(
       res => {
         this.config = res.data
         document.title = this.config.title ? this.config.title : '个人网站导航页'
       }
     )
-    // window.addEventListener('onload', this.getQuote)
-    this.getQuote()
-  },
+  }
   
 }
 </script>
