@@ -64,6 +64,29 @@
                     "description": "Docker 管理面板"
                 }
             ]
+        },
+        {
+            "name": "友链",
+            "sites": [
+                {
+                    "name": "FDU Hole",
+                    "link": "https://www.fduhole.tk",
+                    "img": "https://www.fduhole.tk/img/icons/favicon.svg",
+                    "description": "复旦匿名论坛"
+                },
+                {
+                    "name": "Elsewhere",
+                    "link": "https://kyln24.github.io/Elsewhere",
+                    "img": "https://kyln24.github.io/Elsewhere/favicon@640px.png",
+                    "description": "KYLN 的一隅小站"
+                },
+                {
+                    "name": "李翰昶的万事屋",
+                    "link": "https://kyln24.github.io/Elsewhere",
+                    "img": "https://www.playmarxcards.online/img/navi.svg",
+                    "description": "2000元人民币要比3000美元强多数———眉山剑客陈平"
+                }
+            ]
         }
     ]
 }
