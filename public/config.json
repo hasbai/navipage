@@ -5,6 +5,12 @@
             "name": "应用",
             "sites": [
                 {
+                    "name": "博客",
+                    "link": "https://blog.salve.cf",
+                    "img": "img/blog.png",
+                    "description": "凡是过往，皆为序章"
+                },
+                {
                     "name": "网盘",
                     "link": "https://cloud.salve.cf",
                     "img": "img/cloud.svg",
@@ -27,12 +33,6 @@
                     "link": "https://wiki.salve.cf",
                     "img": "img/wiki.svg",
                     "description": "Kiwix 维基百科数据库" 
-                },
-                {
-                    "name": "Torrent",
-                    "link": "https://pt.salve.cf",
-                    "img": "img/pt.svg",
-                    "description": "Qbittorrent 管理面板"
                 },
                 {
                     "name": "挖矿收益",
@@ -62,6 +62,12 @@
                     "link": "https://docker.salve.cf",
                     "img": "img/docker.svg",
                     "description": "Docker 管理面板"
+                },
+                {
+                    "name": "Torrent",
+                    "link": "https://pt.salve.cf",
+                    "img": "img/pt.svg",
+                    "description": "Qbittorrent 管理面板"
                 }
             ]
         },
@@ -84,7 +90,7 @@
                     "name": "李翰昶的万事屋",
                     "link": "https://www.playmarxcards.online/",
                     "img": "https://www.playmarxcards.online/img/navi.svg",
-                    "description": "2000元人民币要比3000美元强多数———眉山剑客陈平"
+                    "description": "2000元人民币要比3000美元强多数"
                 }
             ]
         }
