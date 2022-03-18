@@ -56,4 +56,3 @@ demo： [demo 页面](https://www.salve.cf)
 4. 将 dist 文件夹中所有文件上传至网站根目录
 #### B. 下载 releases 里面编译好的文件
 将 dist 文件夹中所有文件上传至网站根目录
-
